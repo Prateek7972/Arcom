@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARCOM.Web", "MAQ\ARCOM.Web.csproj", "{5F006ECE-0A78-4536-8DE0-647C4A4F9DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARCOM.BusinessLogic", "BL\ARCOM.BusinessLogic.csproj", "{8C398E16-3189-4743-BCEC-B1400557B1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcom.DataAccess", "DAL\Arcom.DataAccess.csproj", "{BE2CD722-5020-40FE-B439-ABE6190AD356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARCOM.Api2", "ProductApi\ARCOM.Api2.csproj", "{6E2B6B01-8596-4CAF-86E7-099CC1D4A6AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARCOM.Api", "ARCOM.Api\ARCOM.Api.csproj", "{1111BCC5-4C84-4007-9693-204E219A123F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F006ECE-0A78-4536-8DE0-647C4A4F9DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F006ECE-0A78-4536-8DE0-647C4A4F9DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F006ECE-0A78-4536-8DE0-647C4A4F9DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F006ECE-0A78-4536-8DE0-647C4A4F9DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C398E16-3189-4743-BCEC-B1400557B1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C398E16-3189-4743-BCEC-B1400557B1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C398E16-3189-4743-BCEC-B1400557B1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C398E16-3189-4743-BCEC-B1400557B1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2CD722-5020-40FE-B439-ABE6190AD356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2CD722-5020-40FE-B439-ABE6190AD356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2CD722-5020-40FE-B439-ABE6190AD356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2CD722-5020-40FE-B439-ABE6190AD356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B6B01-8596-4CAF-86E7-099CC1D4A6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B6B01-8596-4CAF-86E7-099CC1D4A6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B6B01-8596-4CAF-86E7-099CC1D4A6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B6B01-8596-4CAF-86E7-099CC1D4A6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1111BCC5-4C84-4007-9693-204E219A123F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1111BCC5-4C84-4007-9693-204E219A123F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1111BCC5-4C84-4007-9693-204E219A123F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1111BCC5-4C84-4007-9693-204E219A123F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

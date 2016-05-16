@@ -1,0 +1,11 @@
+*.suo
+MAQ/ARCOM.Api/bin/
+MAQ/MAQ/bin/
+MAQ/ProductApi/bin/
+MAQ/MAQ/obj/
+MAQ/ARCOM.Api/obj/
+MAQ/BL/bin/
+MAQ/BL/obj/
+MAQ/DAL/bin/
+MAQ/DAL/obj/
+MAQ/ProductApi/obj/

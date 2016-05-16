@@ -1,0 +1,228 @@
+﻿@model BL.BLL
+@{
+    ViewBag.Title = "Home Page";
+}
+<head>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div style="margin-top:50px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                   
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Home")'">General Information</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Project Participants</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Code Information</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Design Information</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Project Defaults</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Project Tracking</button>
+                    <button type="button" class="btn btn-default btn-block" onclick="location.href='@Url.Action("Index", "Default")'">Completion Progress</button>
+                        
+                     
+</div>
+
+                <div class="col-sm-9">
+
+
+                    <h4> General Information </h4>
+
+                    <form role="form">
+                        <div class="form-group">
+                            <div style="margin-top:10px;">
+                                @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="MAQ Proj 2May(*******Don't touch it*********)">*@
+                                @Html.EditorFor(model => model.ProjectName, new { htmlAttributes = new { @class = "form-control projectdetail", placeholder = "MAQ Proj 2 May(*******Don't Touch It*******)" } })
+                            </div>
+                            <div class="row">
+                                <div style="margin-top:10px;">
+                                    <div class="col-sm-4">
+                                       @* <input type="email" class="form-control" id="exampleInputEmail1" placeholder="3120">*@
+                                        @Html.EditorFor(model=>model.ProjectCode,new { htmlAttributes = new { @class = "form-control projectcode",placeholder="3120" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner">*@
+                                        @Html.EditorFor(model => model.Owner, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="OwnerRepresentative">*@
+                                       @Html.EditorFor(model => model.OwnerRepresentative, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "OwnerRepresentative" } })
+ 
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div style="margin-top:10px;">
+                                    <div class="col-sm-4">
+                                       @* <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ProjectAddress">*@
+                                        @Html.EditorFor(model => model.ProjectAddress, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "ProjectAddress" } })
+
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="OwnerAddress1">*@
+                                        @Html.EditorFor(model => model.OwnerAddress, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "OwnerAddress1" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                       @* <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner E-mail Address">*@
+                                        @Html.EditorFor(model => model.OwnerEmailAddress, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner E-mail Address" } })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div style="margin-top:10px;">
+                                    <div class="col-sm-4">
+                                       @* <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Project Address 2">*@
+                                        @Html.EditorFor(model => model.ProjectAddressn, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Project Address 2" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner Address 2">*@
+                                        @Html.EditorFor(model => model.OwnerAddressn, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner Address 2" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner Phone Number">*@
+                                        @Html.EditorFor(model => model.OwnerPhoneNumber, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner Phone Number" } })
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div style="margin-top:10px;">
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Project City">*@
+                                        @Html.EditorFor(model => model.ProjectCity, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Project City" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner City">*@
+                                        @Html.EditorFor(model => model.OwnerCity, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner City" } })
+                                    </div>
+                                    <div class="col-sm-4">
+                                        @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner Mobile Number">*@
+                                        @Html.EditorFor(model => model.OwnerMobileNumber, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner Mobile Number" } })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div style="margin-top:10px;">
+                                    <div class="col-sm-4">
+                                        @Html.DropDownList("State", new SelectList(string.Empty, "Value", "Text"), "Please select a State", new { style = "width:270px", @class = "sel" })                                      
+                                    </div>
+
+
+                                    <div class="col-sm-4">
+                                        @Html.DropDownList("States", new SelectList(string.Empty, "Value", "Text"), "Please select a State", new { style = "width:270px", @class = "sel" })
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <select class="sel">
+                                            <option>Origin of Contact</option>
+                                            <option>Default</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div style="margin-top:1px;">
+                                <div class="col-sm-4">
+                                    @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Project Postal Code">*@
+                                    @Html.EditorFor(model => model.ProjectPostalCode, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Project Postal Code" } })
+                                </div>
+                                <div class="col-sm-4">
+                                    @*<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Owner Posrtal Code">*@
+                                    @Html.EditorFor(model => model.OwnerPostalCode, new { htmlAttributes = new { @class = "form-control projectcode", placeholder = "Owner Postal Code" } })
+                                </div>
+                                <div class="col-sm-4">
+                                    <select class="sel">
+                                        <option>Type of Contract</option>
+                                        <option>Default</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div style="margin-top:10px;">
+                                <div class="col-sm-4">
+                                    @Html.DropDownList("Country", ViewData["country"] as List<SelectListItem>, new { style = "width:270px", @class = "sel" })
+                                   
+                                </div>
+
+
+                                <div class="col-sm-4">
+                                    @Html.DropDownList("Countrys", ViewData["country"] as List<SelectListItem>, new { style = "width:270px", @class = "sel" })
+
+                                </div>
+
+                                <div class="col-sm-4">                                 
+                                 <select class="sel">
+                                 <option>United States</option>
+                                 <option>Default</option>
+                                     </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Dropdownlist Selectedchange event
+        $("#Country").change(function () {
+            $("#State").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetStates")',
+                // we are calling json method
+
+                dataType: 'json',
+
+                data: { id: $("#Country").val() },
+               // here we are get value of selected country and passing same value            
+                
+
+                success: function (states) {
+                    // states contains the JSON formatted list
+                    // of states passed from the controller
+
+                    $.each(states, function (i, state) {
+                    $("#State").append('<option value="' + state.Value + '">' +
+                         state.Text + '</option>');
+                        // here we are adding option for States
+                    $("#States").append('<option value="' + state.Value + '">' +
+                    state.Text + '</option>');
+
+                    });
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve states.' + ex);
+                }
+            });
+            return false;
+        })
+    });
+</script>

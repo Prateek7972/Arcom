@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>   
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")  
+    <script src="~/Scripts/jquery-1.10.2.js"></script>         
+</head>
+<body>  
+    <div class="main">
+        <div class="icon-bar"></div>
+        <div class="col-sm-10">
+            MAQ Proj 2May(*******Don't touch it*********)
+        </div>
+            <img src="C:\Users\13090\Desktop\menu.png" alt="Logout" style="width:50px;height:25px;">
+        
+    </div>  
+    <div class="navbar navbar-inverse">
+        <div class="container">           
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Summary", "Index", "Default")</li>
+                    <li>@Html.ActionLink("Setup", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Assembly", "Index", "Default")</li>
+                    <li>@Html.ActionLink("WorkArea", "Index", "Default")</li>
+                    <li>@Html.ActionLink("Output", "Index", "Default")</li>
+                    @*<li class="active">@Html.ActionLink("Output", "Index", "Default")</li>*@
+                </ul>          
+            </div>
+        </div>
+    </div>
+    <div class="band"> </div>
+    <div class="container body-content">
+        @RenderBody()        
+        <footer>            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
